@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden
+    }
+
+    .content {
+      position: relative
+    }
+    canvas {
+      cursor: pointer
+    }
+    canvas.main {
+      display: block;
+      border: 1px solid black;
+      margin: 2% auto;
+      
+    }
+    canvas.text {
+      position: absolute;
+      bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="profile">
+    <input type="color">
+    <input type="text">
+    <button data-shape='circle'>Circle</button>
+    <button data-shape='ellipse'>Ellipse</button>
+    <button data-shape='rectangle'>Rectangle</button>
+    <button data-shape='square'>Square</button>
+  </div>
+  </canvas>
+  <div class="content">
+    <canvas class="main"></canvas>
+    <canvas class="text"></canvas>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
